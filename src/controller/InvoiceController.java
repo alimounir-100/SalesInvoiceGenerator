@@ -62,8 +62,8 @@ public class InvoiceController implements ActionListener {
 		case "cancel":
 			cancelUpdate();
 			break;
-		case "save":
-			saveUpdate();
+		case "deleteitem":
+			deleteitemUpdate();
 			break;
 		case "add":
 			addNewItem();
@@ -114,7 +114,7 @@ public class InvoiceController implements ActionListener {
 		return total;
 	}
 
-	private void saveUpdate() {
+	private void deleteitemUpdate() {
 		for (int i = 0; i < designhome.daDefaultTableModel.getRowCount(); i++)
 			if (designhome.daDefaultTableModel.getValueAt(i, 0).equals(designhome.textField.getText())) {
 				designhome.daDefaultTableModel.setValueAt(designhome.textField_1.getText().toString(), i, 1);

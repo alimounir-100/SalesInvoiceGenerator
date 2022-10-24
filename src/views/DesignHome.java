@@ -154,10 +154,10 @@ public class DesignHome extends JFrame{
 
 		contentPane.add(btnNewButton_1);
 
-		// save button
-		JButton btnNewButton_2 = new JButton("Save");
+		// Delete item button
+		JButton btnNewButton_2 = new JButton("Del Item");
 		btnNewButton_2.setBounds(738, 506, 80, 23);
-		btnNewButton_2.setActionCommand("save");
+		btnNewButton_2.setActionCommand("deleteitem");
 		btnNewButton_2.addActionListener(controller);
 		contentPane.add(btnNewButton_2);
 
